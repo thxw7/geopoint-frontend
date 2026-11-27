@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pontos geográficos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar"></header>
+  <main class="container">
+    <section>
+      <div class="topo">
+        <h1>Pontos geográficos</h1>
+        <a href="formulario.html" class="botao">+ Novo ponto</a>
+      </div>
+      <div class="busca">
+        <label for="campo-busca">Filtrar por nome</label>
+        <input id="campo-busca" type="text" placeholder="Buscar por nome..." />
+      </div>
+      <p class="info" id="carregando">Carregando...</p>
+      <p class="erro escondido" id="erro"></p>
+      <p class="info escondido" id="vazio">Nenhum ponto encontrado</p>
+      <div class="tabela-container escondido" id="tabela">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th><th>Descrição</th><th>Latitude</th><th>Longitude</th><th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/lista.js"></script>
+</body>
+</html>

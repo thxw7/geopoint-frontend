@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhe do ponto</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar"></header>
+  <main class="container">
+    <a href="index.html">← Voltar para a lista</a>
+    <p class="info" id="carregando">Carregando...</p>
+    <p class="erro escondido" id="erro"></p>
+    <section class="detalhe escondido" id="secao-detalhe">
+      <h1>Detalhe do ponto</h1>
+      <dl>
+        <dt>ID</dt><dd id="id-ponto"></dd>
+        <dt>Nome</dt><dd id="nome"></dd>
+        <dt>Descrição</dt><dd id="descricao"></dd>
+        <dt>Latitude</dt><dd id="latitude"></dd>
+        <dt>Longitude</dt><dd id="longitude"></dd>
+      </dl>
+      <div class="acoes">
+        <a class="botao" id="btn-editar">Editar</a>
+        <button type="button" class="perigo" id="btn-excluir">Excluir</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/detalhe.js"></script>
+</body>
+</html>
